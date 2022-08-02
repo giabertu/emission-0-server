@@ -9,10 +9,11 @@ const { mongoose } = require("./db");
     await mongoose.connect(
       "mongodb+srv://jean:nova@cluster0.bfgprwu.mongodb.net/?retryWrites=true&w=majority"
     );
+
     /*     await sequelize.sync(); */
     console.log("Database connection successful 🍏");
   } catch (error) {
-    console.log("Database connection failed 🍎", error);
+    console.log("Database connection failed again🍎", error);
   }
 })();
 
