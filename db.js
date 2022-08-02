@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+/* const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const footprintSchema = new Schema({
@@ -6,4 +6,15 @@ const footprintSchema = new Schema({
 });
 
 const Footprint = mongoose.model("Footprint", footprintSchema);
-module.exports = { mongoose, Footprint };
+module.exports = { mongoose, Footprint }; */
+const Sequelize = require("sequelize");
+
+const sequelize = new Sequelize(process.env.DATABASE_URL);
+
+const Footprints = sequelize.define("Footprints", {
+  footprint: {
+    type: Sequelize.DataTypes.STRING,
+  },
+});
+
+module.exports = { sequelize, Sequelize, Footprints };

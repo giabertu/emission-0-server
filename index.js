@@ -2,14 +2,12 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const router = require("./router.js");
-const { mongoose } = require("./db");
+const { sequelize } = require("./db");
 
 (async () => {
   try {
     /*     await mongoose.connect("mongodb://127.0.0.1:27017/emisssion0?"); */
-    await mongoose.connect(
-      "mongodb+srv://jean:nova@cluster0.bfgprwu.mongodb.net/?retryWrites=true&w=majority"
-    );
+    await sequelize.authenticate();
     console.log("Database connection successful 🍏");
   } catch (error) {
     console.log("Database connection failed 🍎");
