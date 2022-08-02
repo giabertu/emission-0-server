@@ -10,7 +10,7 @@ const { sequelize } = require("./db");
     await sequelize.authenticate();
     console.log("Database connection successful 🍏");
   } catch (error) {
-    console.log("Database connection failed 🍎");
+    console.log("Database connection failed 🍎", error);
   }
 })();
 
