@@ -17,4 +17,6 @@ const Footprints = sequelize.define("Footprints", {
   },
 });
 
-module.exports = { sequelize, Sequelize, Footprints }; */
+/*TESTING COMMIT */
+
+/* module.exports = { sequelize, Sequelize, Footprints }; */
