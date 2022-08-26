@@ -9,5 +9,7 @@ This is the backend repository of the app. If you would like to see the frontend
 ## Get started
 
 You can interact with the app in two ways: online or locally.
+
 To see the app in action online, click [eMission 0](https://emission-0.vercel.app/).
+
 Otherwise, for a local experience, follow the instructions (local section) in the [Readme file](https://github.com/giabertu/emission-0#locally) of the main repository. 
